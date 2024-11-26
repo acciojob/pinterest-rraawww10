@@ -1,16 +1,81 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hello, World!</title>
+      <link rel="stylesheet" href="styles.css" />
+      <style>
 
-<html>
+        body{
+          margin: 0;
+          font-family: 'Courier New', Courier, monospace;
+        }
+      .hero{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 100vh;
+        overflow: hidden;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      .hero-image{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      .hero-content{
+        position: relative;
+        z-index:1;
+        color: white;
+        text-align: center;
+      }
 
-</body>
+      h1{
+        font-size:3em;
+        margin:0 0 20px;
+      }
 
-</html>
+      p{
+        font-size:1.2em;
+        margin:0 0 30px;
+      }
+
+      .explore-button{
+        padding: 15px 30px;
+        background-color: #E60023;
+        color: white;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 1.2em;
+      }
+
+      .explore-button hover{
+        background-color: #C7001D;
+      }
+
+      </style>
+    </head>
+    <body>
+      <!DOCTYPE html>
+  <html>
+    <head>
+      <title>Hello, World!</title>
+      <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+      <div class="hero">
+        <img src="https://images.pexels.com/photos/2662116/pexels-photo-2662116.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Hero Image" class="hero-image">
+        <div class="hero-content">
+            <h1>Discover Your Next Inspiration</h1>
+            <p>Explore a world of ideas and creativity.</p>
+            <a href="#" class="explore-button">Explore Now</a>
+        </div>
+    </div>
+    </body>
+  </html>
+    </body>
+  </html>
